@@ -17,7 +17,6 @@ class PostViewModel : ViewModel() {
          val cllList = postClient.getPosts()
         cllList.enqueue(object : Callback<List<PostModel>>{
             override fun onFailure(p0: Call<List<PostModel>>, p1: Throwable) {
-                TODO("Not yet implemented")
             }
 
             override fun onResponse(p0: Call<List<PostModel>>, p1: Response<List<PostModel>>) {
